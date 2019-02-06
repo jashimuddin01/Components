@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-------------- Bootstrap CSS ---------->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-------------- customs css------------->
+    <link rel="stylesheet" href="css/style.css">
+    <!-------------- responsive ------------->
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Bootstrap 04</title>
+  </head>
+  <body>
+    
+    <h1>This is Collapse</h1>
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta perspiciatis alias impedit nemo hic quisquam corporis tempora, amet atque eligendi!
+      </div>
+    </div>
+
+
+
+
+    <h1>This is Collapse-Multiple targets</h1>
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+    </p>
+
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium qui facere magnam commodi quod illum non, cupiditate aliquam ratione voluptate quis consectetur!
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet amet fuga voluptate cumque qui culpa, minus doloribus ab voluptas aspernatur cupiditate, impedit et.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <h1>This is Collapse-Accordion example</h1>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <h1>This is dropdown-dropdowns Single button</h1>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+
+
+
+
+    
+
+    <h1>This is dropdown-dropdowns link</h1>
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown link
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <h1>This is dropdown- Single danger button</h1>
+        <!-- Example single danger button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <h1>This is dropdown- Split button</h1>
+        <!-- Example split danger button -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">Action</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <h1>This is dropdown- Sizing</h1>
+        <!-- Large button groups (default and split) -->
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Large button
+      </button>
+      <div class="dropdown-menu">
+        ...
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-lg" type="button">
+        Large split button
+      </button>
+      <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        ...
+      </div>
+    </div>
+
+    <!-- Small button groups (default and split) -->
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Small button
+      </button>
+      <div class="dropdown-menu">
+        ...
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-sm" type="button">
+        Small split button
+      </button>
+      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        ...
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+        <!-- Default dropup button -->
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropup
+      </button>
+      <div class="dropdown-menu">
+        <!-- Dropdown menu links -->
+      </div>
+    </div>
+
+    <!-- Split dropup button -->
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-secondary">
+        Split dropup
+      </button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <!-- Dropdown menu links -->
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <h1>There are some drop items</h1>
+    <!-- Default dropright button -->
+    <div class="btn-group dropright">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropright
+      </button>
+      <div class="dropdown-menu">
+        <!-- Dropdown menu links -->
+      </div>
+    </div>
+
+    <!-- Split dropright button -->
+    <div class="btn-group dropright">
+      <button type="button" class="btn btn-secondary">
+        Split dropright
+      </button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropright</span>
+      </button>
+      <div class="dropdown-menu">
+        <!-- Dropdown menu links -->
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Default dropleft button -->
+    <div class="btn-group dropleft">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropleft
+      </button>
+      <div class="dropdown-menu">
+        <!-- Dropdown menu links -->
+      </div>
+    </div>
+
+    <!-- Split dropleft button -->
+    <div class="btn-group">
+      <div class="btn-group dropleft" role="group">
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropleft</span>
+        </button>
+        <div class="dropdown-menu">
+          <!-- Dropdown menu links -->
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary">
+        Split dropleft
+      </button>
+    </div>
+
+
+
+
+
+
+
+
+    <h1>Menu item</h1>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
+      </div>
+    </div> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>This is forms</h1>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
+    <h1>This is forms controls</h1>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </form> <br> <br>
+
+
+
+
+
+
+
+
+
+
+    <h1>Choose file</h1>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Example file input</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+    <h1>This is input group</h1>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+    </div>
+
+    <label for="basic-url">Your vanity URL</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+      </div>
+      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+      <div class="input-group-append">
+        <span class="input-group-text">.00</span>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">With textarea</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div> <br> <br>
+
+
+
+
+
+
+
+
+
+    <h1>This is Jumbotron</h1>
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <h1>This is list group-Contextual classes</h1>
+    <ul class="list-group">
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+
+      
+      <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+      <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+      <li class="list-group-item list-group-item-success">A simple success list group item</li>
+      <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+      <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+      <li class="list-group-item list-group-item-info">A simple info list group item</li>
+      <li class="list-group-item list-group-item-light">A simple light list group item</li>
+      <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+    </ul> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1>This is Modal components</h1>
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+    <h1>This is nav-Horizontal alignment</h1>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+
+
+    
+
+    <h1>This is nav-Vertical alignment</h1>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <h1>This is Navber</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <h1> This is pagination-overview</h1>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav> <br>
+
+
+
+
+
+
+
+
+
+    <h1> This is popovers four directions</h1>
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on top
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on right
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+    sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on bottom
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on left
+    </button> <br> <br>
+
+
+
+
+
+
+
+
+    <h1>This is progress</h1>
+    <div class="progress">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div> <br>
+
+
+
+
+
+
+
+
+    <h1>This is Scrollspy</h1>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#fat">@fat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mdo">@mdo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#one">one</a>
+            <a class="dropdown-item" href="#two">two</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#three">three</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <h4 id="fat">@fat</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nemo, quos unde commodi amet, provident assumenda laudantium non nihil quisquam.</p>
+      <h4 id="mdo">@mdo</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequatur aperiam blanditiis totam harum vitae asperiores saepe quisquam sit esse?</p>
+      <h4 id="one">one</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illum unde cum dolores blanditiis ex tenetur fugiat quam consequatur officia.</p>
+      <h4 id="two">two</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia minus molestiae quo amet obcaecati doloribus suscipit consequuntur sint excepturi, minima!</p>
+      <h4 id="three">three</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam illum quod eum. Molestias odio suscipit molestiae doloremque facere atque!</p>
+    </div> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>This is tooltips</h1>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+      Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+      Tooltip on right
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+      Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+      Tooltip on left
+    </button>
+
+
+
+
+
+
+    <!-- jQuery links -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
